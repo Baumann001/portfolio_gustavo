@@ -1,0 +1,27 @@
+body{
+
+}
+
+#barramenu{
+
+}
+
+.triho{
+width: 350px;
+height: 150px;
+background-color: #4d4d4d;
+border-radius: 150px;
+position: relative;
+cursor: pointer;
+}
+
+.triho .indicador{
+width: 150px;
+height: 150px;
+background-color: black;
+border-radius:50%;
+transform: scale(.9);
+
+}
+
+.trilho .dark
