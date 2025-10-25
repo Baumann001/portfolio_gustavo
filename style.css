@@ -1,12 +1,18 @@
 body{
-
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: #212121;
+transition: .5s;
 }
 
 #barramenu{
 
 }
 
-.triho{
+.trilho{
 width: 350px;
 height: 150px;
 background-color: #4d4d4d;
@@ -15,13 +21,30 @@ position: relative;
 cursor: pointer;
 }
 
-.triho .indicador{
+.trilho .indicador{
 width: 150px;
 height: 150px;
 background-color: black;
 border-radius:50%;
 transform: scale(.9);
+position: absolute;
+left: 0;
+transition: .5s;
 
 }
 
-.trilho .dark
+.trilho.dark{
+background-color: #c3c3c3;
+}
+
+.trilho.dark .indicador{
+left: 200px;
+background-color: #fff;
+}
+
+body.dark{
+    background-color: #e4e4e4;
+}
+body.dark h1{
+     color: #000;
+}
