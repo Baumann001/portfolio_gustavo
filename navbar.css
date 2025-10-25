@@ -1,0 +1,79 @@
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: 100;
+  transition: background-color 0.3s;
+}
+
+.navbar__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar__links li {
+  margin-left: 2rem;
+}
+
+.navbar__links a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar__mobile {
+  position: relative;
+  display: none;
+}
+
+.navbar__mobile .mobile__links {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  flex-direction: column;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.navbar__mobile.active .mobile__links {
+  display: flex;
+}
+
+.navbar__mobile .mobile__links li {
+  margin: 0.5rem 0;
+}
+
+.navbar__mobile .mobile__links a {
+  padding: 0.5rem 2rem;
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+}
+
+.burguer {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__mobile {
+    display: block;
+  }
+}
