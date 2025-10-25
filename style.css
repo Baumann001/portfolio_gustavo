@@ -48,3 +48,11 @@ body.dark{
 body.dark h1{
      color: #000;
 }
+
+img {
+    transition: filter 0.5s;
+}
+
+body.dark img {
+    filter: invert(1);
+}
